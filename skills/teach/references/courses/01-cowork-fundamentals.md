@@ -1,6 +1,7 @@
 # Course 1: Claude Cowork Fundamentals
 
 **Duration**: 45 minutes | **Modules**: 5 | **Prerequisites**: None
+**Plugins**: cogni-teacher (this course is delivered by it)
 **Audience**: Consultants using Claude Cowork for knowledge work
 
 ---
@@ -27,6 +28,11 @@ Key differences from Chat mode:
 Cowork runs in an isolated virtual machine on your computer with controlled file
 and network access. You explicitly grant permissions before Claude accesses files
 or internet resources.
+
+**Meta-moment**: You're experiencing Cowork right now. This course is delivered by
+**cogni-teacher** — a Cowork plugin that guides you through structured lessons with
+theory, demos, exercises, and quizzes. The fact that an AI can teach you how to use
+itself is a good example of what makes Cowork powerful.
 
 ### Demo
 
@@ -154,22 +160,45 @@ your workflow.
 consulting, B2B sales, and marketing work. These are the plugins you will learn
 in subsequent courses.
 
+**cogni-teacher is itself a cogni-works plugin**. You're using it right now —
+it bundles skills (`teach`, `course-deck`), slash commands (`/teach`, `/courses`),
+and course reference files. It's a concrete example of how plugins package
+knowledge and workflows into reusable tools.
+
 ### Demo
 
-Walk through plugin installation:
+Walk through plugin installation and the cogni-works marketplace deployment:
 1. Open Customize menu in sidebar
 2. Browse plugins by category
 3. Show a plugin card — its description, components, install button
-4. Install a sample plugin
-5. Show the customization flow
+4. Install the cogni-works marketplace — walk through each plugin:
+
+| Plugin | What it does |
+|--------|-------------|
+| cogni-workspace | Shared environment, themes, plugin discovery |
+| cogni-obsidian | Obsidian vault setup with terminal integration |
+| cogni-copywriting | Document polishing with messaging frameworks |
+| cogni-narrative | Executive narratives using story arcs |
+| cogni-claims | Fact-checking and source verification |
+| cogni-tips | Trend scouting and reporting (TIPS framework) |
+| cogni-portfolio | Portfolio messaging and positioning |
+| cogni-visual | Presentations, posters, visual deliverables |
+| cogni-teacher | This training program (you're using it now) |
+
+5. After installation, verify with `/courses` — all 7 courses should appear
+6. Show the customization flow on one plugin
 
 ### Exercise
 
 Ask the user to:
 1. Open the Customize menu
-2. Browse available plugins
-3. Find and install the cogni-works marketplace (if not already installed)
-4. List the plugins they see from cogni-works
+2. Install the full cogni-works marketplace — all plugins listed above
+3. After installation, run `/courses` to confirm the curriculum is available
+4. Pick any installed plugin and list the slash commands it provides
+5. Confirm: how many cogni-works plugins are now installed?
+
+If any plugin fails to install, troubleshoot before continuing — every
+subsequent course depends on having the marketplace deployed.
 
 ### Quiz
 
@@ -180,7 +209,10 @@ Ask the user to:
    - d) Databases, APIs, webhooks, cron jobs
    **Answer**: b
 
-2. **Multiple choice**: How do you customize an installed plugin?
+2. **Hands-on**: Run `/courses` and tell me what you see. How many courses
+   are listed, and what's the status of each?
+
+3. **Multiple choice**: How do you customize an installed plugin?
    - a) Edit the source code
    - b) Click "Customize" on the plugin card — Claude guides you
    - c) Uninstall and reinstall with different settings
@@ -192,6 +224,8 @@ Ask the user to:
 - Plugins bundle skills, connectors, commands, and sub-agents
 - Install from Customize menu or upload custom plugins
 - cogni-works = open-source plugins for consulting work
+- You deployed the full cogni-works marketplace — all plugins are ready
+- `/courses` confirms your training program is active
 - Customize any plugin after installation
 
 ---
@@ -205,6 +239,10 @@ the command name. For example:
 - `/sales:call-prep` — Prepare for a sales call
 - `/copywrite report.md` — Polish a document
 - `/narrative --arc=corporate-visions` — Create an executive narrative
+
+You've already used two slash commands to get here:
+- `/teach` — started this course (or `/teach 1` to jump to a specific one)
+- `/courses` — shows the full curriculum with your progress
 
 To use slash commands:
 - Type `/` in the Cowork task input to see available commands
@@ -287,6 +325,8 @@ Common uses for consultants:
 4. Use scheduled tasks for routine work, Cowork tasks for creative work
 5. Review outputs before sharing — Cowork is a draft producer, not a publisher
 6. Start with the cogni-works course sequence to build skills progressively
+7. Use `/courses` to track your learning progress across sessions
+8. Use `course-deck` to generate presentation materials for team onboarding
 
 ### Demo
 
@@ -334,5 +374,8 @@ Congratulations! You now understand:
 - How to install, browse, and customize plugins
 - How to use slash commands and connectors
 - How to schedule recurring tasks and follow best practices
+
+You've also seen cogni-teacher in action — the plugin delivering this course.
+You now know how plugins, slash commands, and structured workflows come together.
 
 **Next recommended course**: Course 2 — Workspace & Obsidian Setup
